@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <title>Home Page</title>
+         <style>
+             body
+             {
+                 background-color: white;
+                 overflow-x: hidden;
+             }
+           .container-flui
+            {
+              background-color: cyan;
+              background-repeat: no-repeat;
+              max-width:100%;
+              height:auto;
+            } 
+
+.info-card {
+    float: left;
+	margin: 10px;
+	-webkit-perspective: 600px;
+    margin-left: 70px;
+}
+
+.front, .back {
+	background: #FFF;
+	border-radius: 10px;
+	transition: -webkit-transform 1s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	border: 1px solid black;
+}
+
+.front {
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	z-index: 1;
+}
+
+.back {
+	padding: 20px;
+	padding-top: 0px;
+	width: 300px;
+	height: 300px;
+	-webkit-transform: rotateY(-180deg);
+	
+}
+
+.info-card:hover .back {
+	-webkit-transform: rotateY(0);
+}
+
+.info-card:hover .front {
+	-webkit-transform: rotateY(180deg);
+}
+
+.card-image {
+width: 100%;
+height: 100%;
+}
+             .centre
+             {
+                 text-decoration: none;
+                 text-align: center;
+                 color:aquamarine;
+             }
+             a:link
+             {
+                 text-decoration: none;
+             }
+             
+    </style> 
+  </head>
+  <body>
+      <div class="container-flui">
+          
+          <div class="row">
+               <div class="col-md-4">
+                   <nav class="navbar navbar-light navbar-expand-lg">
+                      <a class="navbar-brand" href="index.html"><img src="logo.jpg"  style="height:50px; width:150px;"></a>
+                   </nav>
+               </div>
+               <div class="col-md-4" style="margin-top: 13px;color:rgb(150,100,200);margin-left: 54px;padding-left: 70px;font-family:castellar"><h1>Flamingo</h1></div>
+          </div>
+        </div>
+        <div style="background-color:pink;width:100%;"> 
+           <nav class="navbar navbar-light  navbar-expand-lg">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav" >
+                        <li class="nav-item" style="margin-left: 240px;color:white">
+                            <a class="nav-link" href="index.html"><h5 style="color:black"><b>Home</b></h5></a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 120px;">
+                            <a class="nav-link" href="men.html"><h5 style="color:black"><b>Men</b></h5></a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 120px;">
+                            <a class="nav-link" href="women.html"><h5 style="color:black"><b>Women</b></h5></a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 120px;">
+                            <a class="nav-link" href="kids.html"><h5 style="color:black"><b>Kids</b></h5></a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 120px;">
+                            <a class="nav-link" href="about.html"><h5 style="color:black"><b>Contact</b></h5></a>
+                        </li>
+                    </ul>
+                </div> 
+         </nav>
+       </div>
+      
+       <center>
+        <div id="my-carousel" class="carousel slide w-75 ml-auto mr-auto" data-ride="carousel" style="margin-top: 40px;">
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+              <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+               <li data-target="#my-carousel" data-slide-to="1"></li>
+              <li data-target="#my-carousel" data-slide-to="2"></li>
+          </ul>
+          
+          <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                  <img class="d-block img-fluid" src="men1.jpg" alt="first image" style="height:550px;width:950px;">
+                  
+              </div>
+              <div class="carousel-item">
+                  <img class="d-block img-fluid" src="women.jpg" alt="second image" style="height:550px;width:950px;">
+                  
+              </div>
+              <div class="carousel-item">
+                  <img class="d-block img-fluid" src="kids.jpg" alt="third image" style="height:550px;width:950px;">
+                  
+              </div>
+          </div>
+          
+          <a class="carousel-control-prev" href="#my-carousel" data-slide="prev">
+              <span class="carousel-control-prev-icon" style="height: 100px;width: 90px;background-color: aqua;"></span>
+          </a>
+          <a class="carousel-control-next" href="#my-carousel" data-slide="next">
+              <span class="carousel-control-next-icon" style="height: 100px;width: 90px;background-color: aqua;" ></span>
+          </a>
+        </div>
+      </center>
+      
+      <br>
+      <div class="container">
+          <div class="row">
+              <div class="offset-md-1 col-md-5 p-3" style="background-color: beige;">
+                  <h4 style="font-weight: 900;margin-left: 20px;">UP TO 70% + EXTRA 10% OFF</h4>
+              </div>
+              <div class="col-md-5 ml-2 p-3"  style="background-color: beige;">
+                  <h4  style="font-weight: 900;margin-left: 85px;">UNDER 999 STORE</h4>
+              </div>
+          </div>
+      </div>
+      
+      <br>
+      
+     <div class="container" style="height:100%;">
+         <div class="row">
+          <div class="col-md-5">
+              <img src="grid1.jpg" style="width:100%;margin-left: 80px" >
+          </div>
+             <div class="col-md-1"></div>
+          <div class="col-md-5" style="margin-left: 16px">
+              <img src="grid2.jpg" style="width:100%">
+          </div>
+        </div>
+         <br>
+         <div class="row">
+          <div class="col-md-5" style="margin-top: -79px;margin-left: 80px;">
+              <img src="grid3.jpg" style="width:100%">
+          </div>
+             <div class="col-md-1"></div>
+          <div class="col-md-5" style="margin-left:-66px;">
+              <img src="grid4.jpg" style="width:100%">
+          </div>
+        </div>
+      </div>
+      
+      <br>
+      
+      <div class="container" style="height:100%;">
+          <div class="row">
+            <div class="info-card">
+                <div class="front"><img class="card-image" src="women.webp"></div>
+                <div class="back">
+                    <a href="women.html"><h2 class="centre">Women</h2></a>
+			    </div>
+            </div>
+              
+              <div class="info-card">
+                <div class="front"><img class="card-image" src="kids.webp"></div>
+                <div class="back">
+				 <a href="kids.html"><h2 class="centre">Kids</h2></a>
+			    </div>
+              </div>
+              
+              <div class="info-card">
+                <div class="front"><img  class="card-image" src="men.webp" ></div>
+                <div class="back">
+				   <a href="men.html"><h2 class="centre">Men</h2></a>
+			    </div>
+              </div>
+          </div>
+      </div>
+      <br><br>
+      
+    <div style="background-color:lightgray; height:auto">
+          <br>
+          <h5 style="margin-left:270px;margin-right: 250px;">© 2018 NITISH GARG. All rights reserved. Web Developer and Founder of Website</h5>
+        <div>
+            <a href="#"><img src="playstore.jpg"style="width:100px;height:30px;margin-left: 500px;"></a>
+            
+            <a href="#"><img src="applestore.png" style="width:100px;height:30px;margin-left: 20px;"></a>
+            
+            <a href="#"><img src="micro.png" style="width:100px;height:30px;margin-left: 20px;"></a>
+              
+        </div>
+      <br>
+         <div class="row">
+              <div class="col-md-1"></div>
+              
+              <div class="col-md-3">
+                  <img src="header1.png" style="height:50px;width:50px;">
+                  CASH ON DELIVERY</div>
+              
+               <div class="col-md-1"></div>
+              
+              <div class="col-md-3">
+                  <img src="header2.png" style="height:50px;width:50px;">
+                  15 DAY RETIURNS</div>
+              
+               <div class="col-md-1"></div>
+              
+              <div class="col-md-3">
+                  <img src = "header3.png" style="height:50px;width:50px;">
+                  FREE SHIPPING</div>
+          </div>
+           
+           <nav class="navbar navbar-expand-sm justify-content-center">
+               <ul class="navbar-nav">
+                 <li class="nav-item">
+                      <a class="nav-link" href="#">HELP</a>
+                  </li>
+                <li class="nav-item">
+                     <a class="nav-link" href="#">SUPPORT</a>
+                </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="#">TERMS AND CONDITIONS</a>
+                 </li>
+                    <li class="nav-item">
+                     <a class="nav-link" href="#">FAQS</a>
+                 </li>
+              </ul>
+           </nav>
+      </div>
+     
+       <div class="sticky-container">
+		<ul class="sticky">
+			<li>
+				<a href="">
+                    <img title="" alt="" src="facebook.svg" />
+                    <p>Facebook</p>
+				</a>
+			</li>
+			
+			<li>
+				<a href="">
+                    <img title="" alt="" src="twitter.svg" />
+                    <p>Twitter</p>
+				</a>
+			</li>
+			
+			<li>
+				<a href="">
+                    <img title="" alt="" src="pinterest.svg" />
+                    <p>Pinterest</p>
+				</a>
+			</li>
+			
+			<li>
+				<a href="">
+                    <img title="" alt="" src="linkedin.svg" />
+                    <p>Linkedin</p>
+				</a>
+			</li>
+			
+			<li>
+			    <a href="">
+                    <img title="" alt="" src="google_plus.svg" />
+                    <p>Google Plus</p>
+				</a>
+			</li>
+			
+			<li>
+			    <a href="">
+                    <img title="" alt="" src="instagram.svg" />
+                    <p>Instagram</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+         
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="./jquery/jquery-3.3.1.slim.min.js" ></script>
+     <script src="./popper.js/1.13.0/umd/popper.min.js" ></script>
+     <script src="./bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+  </body>
+</html>
